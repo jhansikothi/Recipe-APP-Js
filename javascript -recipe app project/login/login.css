@@ -1,0 +1,178 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #0f2862, #2b4d8f);
+    background-size: 200% 200%;
+    animation: gradientAnimation 6s infinite alternate;
+    color: #ffffff;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 4px 5px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #1e3c72;
+    font-size: 24px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.input-group input:focus {
+    border-color: #1e3c72;
+    outline: none;
+    box-shadow: 0 0 5px rgba(30, 60, 114, 0.5);
+}
+
+.error-message {
+    color: #e63946;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    background-color: #1e3c72;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #2a5298;
+}
+
+.alternate {
+    margin-top: 20px;
+    font-size: 14px;
+    color: black;
+}
+
+.alternate a {
+    color: #1e3c72;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.alternate a:hover {
+    text-decoration: underline;
+}
+
+.forgot-password {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.forgot-password a {
+    color: #1e3c72;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .card {
+        padding: 30px;
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .input-group input {
+        padding: 10px;
+    }
+
+    .btn {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .input-group input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .alternate {
+        font-size: 12px;
+    }
+
+    /*.forgot-password {
+        font-size: 12px;
+    }*/
+}
+
+@media (max-width: 1200px) {
+    .card {
+        width: 60%;
+    }
+}
